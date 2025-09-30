@@ -16,7 +16,7 @@ public class Generator : MonoBehaviour
     {
         for (int i = 0; i < _settings.birdCount; i++)
         {
-            Vector3 spawnPos = _settings.positionBird.position + new Vector3(Random.Range(-5f, 5f), Random.Range(-5f, 5f), 0);
+            Vector3 spawnPos = _settings.positionBird + new Vector3(Random.Range(-5f, 5f), Random.Range(-5f, 5f), Random.Range(-5f, 5f));
             GameObject bird = Instantiate(_settings.birdPrefab, spawnPos, Quaternion.identity);
             
             birdPrefabs.Add(bird);

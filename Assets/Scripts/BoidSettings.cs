@@ -10,14 +10,19 @@ public class BoidSettings : ScriptableObject
     public float force;
     public float speed;
     public float direction;
+
+    /*[Header("Orbit")]
+    public Vector3 center = Vector3.zero;
+    public float maxRadius;
+    public float turnStrength;*/
     
-    [Header("Types of force")]
-    public bool cohesion;
-    public bool separation;
-    public bool alignement;
+    [Header("Types of cloud")]
+    public bool denseCloud;
+    public bool scatteredCloud;
+    public bool longCloud;
     
     [Header("Generator")]
     public int birdCount;
-    public Transform positionBird;
+    public Vector3 positionBird;
 
 }
