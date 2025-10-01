@@ -4,19 +4,22 @@ using System.Collections.Generic;
 public class Forces: MonoBehaviour
 {
     [SerializeField] private BoidSettings _settings;
-    private Vector3 _velocity;
+    private Vector3 _velocity = Vector3.zero;
+    private Vector3 _acceleration = Vector3.zero;
 
     private void Start()
     {
-        float angle = Random.Range(0f, Mathf.PI * 2f);
-        _velocity = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0) * _settings.speed;
+        _settings.ApplyProfile();
     }
     
     private void Update()
     {
         DistanceBetweenBoids(Generator.birdPrefabs);
-        
+        WallForBoid();
+
+        _velocity += _acceleration * Time.deltaTime;
         transform.position += _velocity * Time.deltaTime;
+        _acceleration = Vector3.zero;
     }
 
     private void DistanceBetweenBoids(List<GameObject> birds)
@@ -79,13 +82,25 @@ public class Forces: MonoBehaviour
             if (_settings.useAlignment)
                 direction += alignment * _settings.alignmentWeight;
             
-            _velocity = Vector3.Lerp(_velocity, direction * _settings.speed, Time.deltaTime);
+            //_velocity += direction * _settings.speed * Time.deltaTime;
+            _acceleration += direction * _settings.speed;
+        }
+    }
 
-            if (_velocity.sqrMagnitude > 0.001f)
-            {
-                float angle = Mathf.Atan2(_velocity.y, _velocity.x) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.Euler(0, 0, angle);
-            }
+    private void WallForBoid()
+    {
+        Vector3 center = _settings.area.transform.position;
+        float radius = _settings.area.transform.localScale.x/2f;
+
+        Vector3 offset = transform.position - center;
+        float distance = offset.magnitude;
+
+        if (distance > radius)
+        {
+            Vector3 directionToCenter = (center - transform.position).normalized;
+            _acceleration += directionToCenter * _settings.speed;
+
+            _velocity *= 0.9f;
         }
     }
 }

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\gfunarotourbez\\Documents\\GitHub\\Boids\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|c:\\users\\gfunarotourbez\\documents\\github\\boids\\assets\\scripts\\area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|c:\\users\\gfunarotourbez\\documents\\github\\boids\\assets\\scripts\\forces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\forces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\gfunarotourbez\\Documents\\GitHub\\Boids\\assets\\scripts\\generator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\generator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\gfunarotourbez\\Documents\\GitHub\\Boids\\assets\\scripts\\boidsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boidsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|c:\\users\\gfunarotourbez\\documents\\github\\boids\\assets\\scripts\\boidsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boidsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|C:\\Users\\gfunarotourbez\\Documents\\GitHub\\Boids\\assets\\scripts\\generator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{131EA63B-33A2-917D-98A2-67F5574E359A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\generator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -32,33 +36,46 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\BoidSettings.cs",
               "ToolTip": "C:\\Users\\gfunarotourbez\\Documents\\GitHub\\Boids\\Assets\\Scripts\\BoidSettings.cs",
               "RelativeToolTip": "Assets\\Scripts\\BoidSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-30T07:55:08.76Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Forces.cs",
               "DocumentMoniker": "C:\\Users\\gfunarotourbez\\Documents\\GitHub\\Boids\\Assets\\Scripts\\Forces.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Forces.cs",
               "ToolTip": "C:\\Users\\gfunarotourbez\\Documents\\GitHub\\Boids\\Assets\\Scripts\\Forces.cs",
               "RelativeToolTip": "Assets\\Scripts\\Forces.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAuwDYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T10:05:21.434Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Area.cs",
+              "DocumentMoniker": "C:\\Users\\gfunarotourbez\\Documents\\GitHub\\Boids\\Assets\\Scripts\\Area.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Area.cs",
+              "ToolTip": "C:\\Users\\gfunarotourbez\\Documents\\GitHub\\Boids\\Assets\\Scripts\\Area.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Area.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T09:49:50.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Generator.cs",
               "DocumentMoniker": "C:\\Users\\gfunarotourbez\\Documents\\GitHub\\Boids\\Assets\\Scripts\\Generator.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Generator.cs",
               "ToolTip": "C:\\Users\\gfunarotourbez\\Documents\\GitHub\\Boids\\Assets\\Scripts\\Generator.cs",
               "RelativeToolTip": "Assets\\Scripts\\Generator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAACLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-29T09:57:51.677Z",
               "EditorCaption": ""
