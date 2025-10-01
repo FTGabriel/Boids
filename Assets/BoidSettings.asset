@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: BoidSettings
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 586270951631107835, guid: 278ee764aed2ce44e9a8d8e28fd076c6, type: 3}
-  force: 5
   speed: 5
-  direction: 5
-  cohesion: 0
-  separation: 0
-  alignement: 0
-  birdCount: 10
+  neighborRadius: 10
+  separationRadius: 20
+  useCohesion: 1
+  useSeparation: 1
+  useAlignment: 1
+  cohesionWeight: 1
+  separationWeight: 1
+  alignmentWeight: 1
+  birdCount: 100
   positionBird: {x: 0, y: 0, z: 0}
