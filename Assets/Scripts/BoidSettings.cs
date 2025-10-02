@@ -13,18 +13,16 @@ public class BoidSettings : ScriptableObject
 {
     [Header("Prefabs")]
     public GameObject birdPrefab;
-    public GameObject area;
+    //public GameObject area;
     
     [Header("Profile Settings")]
-    public BoidProfile profile = BoidProfile.Normal;
+    //public BoidProfile profile = BoidProfile.Normal;
     
     [Header("Forces of movement")]
-    public float force;
     public float speed;
     [Range(-5f, 20f)] public float cohesionSpeed;
     [Range(-5f, 20f)] public float separationSpeed;
     [Range(-5f, 20f)] public float alignementSpeed;
-    public float direction;
     public float perceptionRadius;
     
     [Header("Orbit")]

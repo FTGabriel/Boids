@@ -25,10 +25,10 @@ public class Generator : MonoBehaviour
             {
                 float rand = Random.value;
 
-                if (rand < 0.7f) boidComponent.profile = BoidProfile.Normal;      // 70%
-                else if (rand < 0.85f) boidComponent.profile = BoidProfile.Late; // 15%
-                else if (rand < 0.95f) boidComponent.profile = BoidProfile.Happy; // 10%
-                else boidComponent.profile = BoidProfile.Annoying;                // 5%
+                if (rand < 0.5f) boidComponent.profile = BoidProfile.Normal;      // 50%
+                else if (rand < 0.75f) boidComponent.profile = BoidProfile.Late; // 25%
+                else if (rand < 0.90f) boidComponent.profile = BoidProfile.Happy; // 15%
+                else boidComponent.profile = BoidProfile.Annoying;                // 10%
             }
             
             birdPrefabs.Add(bird);
