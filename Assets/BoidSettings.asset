@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: BoidSettings
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 5889867581910344179, guid: a7ea5b3232a5ad149893dafda247b534, type: 3}
-  spawnRadius: 10
-  speed: 5
-  neighborRadius: 10
-  separationRadius: 20
-  useCohesion: 1
-  useSeparation: 1
-  useAlignment: 0
-  cohesionWeight: 1
-  separationWeight: 1
-  alignmentWeight: 1
-  denseCloud: 0
-  scatteredCloud: 0
-  longCloud: 0
-  birdCount: 100
+  area: {fileID: 196934345539284880, guid: f43d0b49098e73d4e8b192e7a34f7364, type: 3}
+  profile: 0
+  force: 1
+  speed: 1
+  cohesionSpeed: 1
+  separationSpeed: 2.5
+  alignementSpeed: 1
+  direction: 0
+  perceptionRadius: 10
+  center: {x: 0, y: 0, z: 0}
+  maxRadius: 30
+  turnStrength: 2
+  birdCount: 50
   positionBird: {x: 0, y: 0, z: 0}
