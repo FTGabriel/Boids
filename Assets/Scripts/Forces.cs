@@ -1,9 +1,10 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class Forces: MonoBehaviour
+public class Forces: MonoBehaviour, IRepulse
 {
     [SerializeField] private BoidSettings _settings;
+    [SerializeField] private Area areaScript;
     private Vector3 _velocity;
     
     List<GameObject> birds = Generator.birdPrefabs;
@@ -104,6 +105,13 @@ public class Forces: MonoBehaviour
                 acceleration += centeringForce;
             }
 
+            if (areaScript != null)
+            {
+                // On utilise directement la méthode de repulsion
+                (boid1.GetComponent<Forces>() as IRepulse)
+                    ?.Repulse(areaScript.transform.position, _settings.turnStrength, Time.deltaTime);
+            }
+
             // ---  Update speed ---
             velocity1 += acceleration * Time.deltaTime;
             velocity1 = Vector3.ClampMagnitude(velocity1, _settings.speed);
@@ -124,7 +132,14 @@ public class Forces: MonoBehaviour
             boid.GetComponent<Forces>()._velocity = newVelocities[i];
         }
     }
-    
+
+    // Definition of repulse
+    public void Repulse(Vector3 center, float force, float deltaTime)
+    {
+        Vector3 dir = (transform.position - center).normalized;
+        _velocity += dir * force * deltaTime;
+    }
+
     // Set the parameters of the three profile Late, Happy and Annoying
     private Vector3 ApplyProfile(Vector3 cohesion, Vector3 alignment, Vector3 separation, GameObject boidObj)
     {

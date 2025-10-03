@@ -1,15 +1,27 @@
 using UnityEngine;
 
-public class A : MonoBehaviour
+public class Area : MonoBehaviour
 {
-    [SerializeField] private BoidSettings _settings;
-    [SerializeField] private GameObject _area;
+    [SerializeField] private float radius = 5f;
+    [SerializeField] private float force = 10f;
 
-    private void WallForBoid()
+    private void OnDrawGizmosSelected()
     {
-        if (_area)
-        {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, radius);
+    }
 
+    private void Update()
+    {
+        Collider[] hits = Physics.OverlapSphere(transform.position, radius);
+
+        foreach (var hit in hits)
+        {
+            IRepulse repulsable = hit.GetComponent<IRepulse>();
+            if (repulsable != null)
+            {
+                repulsable.Repulse(transform.position, force, Time.deltaTime);
+            }
         }
     }
 }

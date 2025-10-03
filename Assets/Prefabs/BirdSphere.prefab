@@ -101,6 +101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _settings: {fileID: 11400000, guid: bb3a53a2fe683664ca9ba35f07c090d8, type: 2}
+  areaScript: {fileID: 7947420641692070007, guid: f43d0b49098e73d4e8b192e7a34f7364, type: 3}
+  useAreaEffect: 0
 --- !u!114 &1366036744314583403
 MonoBehaviour:
   m_ObjectHideFlags: 0
