@@ -13,7 +13,6 @@ public class BoidSettings : ScriptableObject
 {
     [Header("Prefabs")]
     public GameObject birdPrefab;
-    public GameObject area;
     
     [Header("Profile Settings")]
     public BoidProfile profile = BoidProfile.Normal;

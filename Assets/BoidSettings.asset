@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: BoidSettings
   m_EditorClassIdentifier: 
   birdPrefab: {fileID: 5889867581910344179, guid: a7ea5b3232a5ad149893dafda247b534, type: 3}
-  area: {fileID: 196934345539284880, guid: f43d0b49098e73d4e8b192e7a34f7364, type: 3}
   profile: 0
   speed: 0.5
   cohesionSpeed: 1
