@@ -19,12 +19,10 @@ public class BoidSettings : ScriptableObject
     public BoidProfile profile = BoidProfile.Normal;
     
     [Header("Forces of movement")]
-    public float force;
     public float speed;
     [Range(-5f, 20f)] public float cohesionSpeed;
     [Range(-5f, 20f)] public float separationSpeed;
     [Range(-5f, 20f)] public float alignementSpeed;
-    public float direction;
     public float perceptionRadius;
     
     [Header("Orbit")]
